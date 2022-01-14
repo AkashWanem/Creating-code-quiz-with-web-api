@@ -1,4 +1,5 @@
 const timer = document.querySelector("#time");
+const startButton = document.querySelector('#start-btn');
 
 var secondsLeft = 115;
 
@@ -13,7 +14,8 @@ function displayTimer() {
     }, 1000);
 }
 
-displayTimer();
+startButton.addEventListener('click', displayTimer);
+//displayTimer();
 
 
 // creating function to display questions
