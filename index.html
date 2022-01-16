@@ -12,23 +12,29 @@
     <div class="timer">Time: <span id="time">0</span></div>
 
     <div class="container">
-        <div class="main-screen">
+        <div class="main-screen" id="main-screen">
             <h1>Coding Quiz Challenge</h1>
             <p>This quiz contains series of Javascript related questions to test your knowledge on what have you learnt until now.</p>
             <button id="start-btn">Start Quiz</button>
         </div>
 
-        <div id="game-card" class="hide">
+        <div id="game-card">
             <h3 id="question">Question Goes Here!</h3>
-            <ol>
-                <li id="option1"></li>
-                <li id="option2"></li>
-                <li id="option3"></li>
-                <li id="option4"></li>
+            <ol><section></section>
+                <li id="option1" class="choice"></li>
+                <li id="option2" class="choice"></li>
+                <li id="option3" class="choice"></li>
+                <li id="option4" class="choice"></li>
             </ol>
+            <footer id="feedback" class="feedback"></footer>
         </div>
 
-        <div id="score-screen" class="hide">
+        <div id="game-over" class="game-over">
+            <h1>!! GAME OVER !!</h1>
+            <h2>You scored <span id="scoreBtn" class="btn">Score</span> points!</h2>
+          </div>
+
+        <div id="score-screen">
             <h2>All done!</h2>
             <p>Your final score is <span id="final-score"></span>.</p>
             <p>
@@ -37,7 +43,7 @@
             </p>
         </div>
 
-        <div id="score-card" class="hide">
+        <div id="score-card">
             <h2>Highscores</h2>
             <ol id="highscores"></ol>
             <button id="back">Go Back</button>

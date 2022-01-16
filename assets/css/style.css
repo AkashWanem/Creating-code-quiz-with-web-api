@@ -8,10 +8,6 @@ body {
     max-width: 600px;
 }
   
-.hide {
-    display: none;
-}
-  
 .main-screen {
     text-align: center;
 }
@@ -58,4 +54,23 @@ ol {
     padding-left: 0px;
     max-height: 400px;
     overflow: auto;
+}
+
+.choice {
+    background-color: cornflowerblue;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 0.25%;
+    cursor: pointer;
+    color: cyan;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 60px;
+    border-bottom: 2px solid sienna;
+}
+
+#game-over {
+    text-align: center;
 }
